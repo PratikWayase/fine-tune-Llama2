@@ -31,13 +31,6 @@ Adjust the parameters in the script according to your specific requirements. Par
 # Usage
 Once fine-tuning is complete, you can use the newly trained model for various natural language processing tasks. The fine-tuned model is saved with the name "llama-2-7b-databricks-dolly".
 
-# inference
-
-# Run text generation pipeline with our next model
-prompt = "What is a price action in forex market?"
-pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_length=200)
-result = pipe(f"<s>[INST] {prompt} [/INST]")
-print(result[0]['generated_text'])
 
 # Acknowledgments
 The LLMA2 model and its components, QLoRA and Peft, were developed by NousResearch. Please refer to the official documentation for more details.
@@ -50,7 +43,8 @@ keep describe version which want to use bocz
 but when u run training arguments they show you you not install torch / accelerate
 thats why you mention version of that in my case i use torch==1.10.0 like this not this !pip install torch
 
-3) model_name = "NousResearch/llama-2-7b-chat-hf"
+3)
+    model_name = "NousResearch/llama-2-7b-chat-hf"
   dataset_name = "databricks/databricks-dolly-15k"
   new_model = "llama-2-7b-databricks-dolly"
 
