@@ -20,17 +20,6 @@ pip install -r requirements.txt
 Download LLMA2 Pre-trained Model:
 Obtain the LLMA2 pre-trained model ("NousResearch/llama-2-7b-chat-hf") from the Hugging Face model hub.
 
-Download Custom Dataset:
-Use the datasets library to load your custom dataset. In this example, the dataset used is "mlabonne/guanaco-llama2-1k".
-note that if datasize is large it take lot of time.in my case databricks-dolly-15k is 15 mb and it take lot of time to train 
-so its best to choose small datasize if you want to get handson experience on fine tuning large language models.
-
-Configure Parameters:
-Adjust the parameters in the script according to your specific requirements. Parameters include QLoRA settings, bitsandbytes configuration, training arguments, and SFT parameters.
-
-# Usage
-Once fine-tuning is complete, you can use the newly trained model for various natural language processing tasks. The fine-tuned model is saved with the name "mlabonne/guanaco-llama2-1k"
-
 
 # Acknowledgments
 The LLMA2 model and its components, QLoRA and Peft, were developed by NousResearch. Please refer to the official documentation for more details.
