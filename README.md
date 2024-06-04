@@ -1,4 +1,4 @@
-# fine-tune-llma2-
+# fine-tune-Llama2
 
  fine-tuning the NousResearch/llama-2-7b-chat-hf model on a custom dataset using QLoRA (Quantization in Language Representation) 
  Peft (Position Embedding Fourier Transform) techniques.
